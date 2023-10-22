@@ -1,0 +1,560 @@
+body{
+    /* background-color: #737373; */
+    background-color: #dbe8e9;
+}
+
+h1{
+    /* font-size: 100px; */
+    font-family: Arial;
+    text-align: center;
+}
+
+h2{
+    color: black;
+    /* font-size: 50px; */
+    font-family: Arial;
+}
+
+h3{
+    color: #296e96;
+    /* font-size: 50px; */
+    font-family: Arial;
+}
+
+p {
+    /* line-height: 1.5; */
+}
+
+img{
+    /* border: 5px solid #FF5733; */
+    padding: 10px;
+    margin: 20px;
+    /* border-top-right-radius: 30px; */
+}
+
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #53707eff;
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+nav a:hover:not(.current) {
+  background-color: #111;
+}
+
+.current {
+  background-color: #76a1a6;
+}
+
+/* Each page has a "Skip to Main Content" link that only appears when it has focus (using the tab key) */
+
+/* The link is positioned 40px above the top of its parent element (it is hidden by default).
+When the link is in focus it is positioned 20px below the top of its parent (so it is visible only when in focus.) */
+.skip a{
+    position: absolute; /*?why need this?*/
+    top: -40px;
+    overflow: hidden;
+  }
+
+.skip a:focus{
+    top: 20px;
+  }
+
+/* ================ GRID ================ */
+
+
+
+.container{
+  display: grid;
+  grid-template-columns: 15% auto 15%;
+  gap: 15px;
+}
+
+/* ====== Nation 1: Taiwan ====== */
+
+.nation1_text, .nation1_img{
+    grid-row: 1 / span 1;
+}
+
+.overview1, .overview1_img{
+    grid-row: 2 / span 1;
+}
+
+.photo_gallery1{
+    grid-row-start: 3;
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+.location1, .location1_img{
+grid-row-start: 4;
+}
+
+.location2, .location2_img{
+    grid-row-start: 5;
+}
+
+.location3, .location3_img{
+    grid-row-start: 6;
+}
+
+.location4, .location4_img{
+    grid-row-start: 7;
+}
+
+.location5, .location5_img{
+    grid-row-start: 8;
+}
+
+/* ====== Nation 2: Japan ====== */
+
+.nation2_text, .nation2_img{
+    grid-row: 9 / span 1;
+}
+
+.overview2, .overview2_img{
+    grid-row: 10 / span 1;
+}
+
+.photo_gallery2{
+    grid-row-start: 11;
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+.location6, .location6_img{
+    grid-row-start: 12;
+}
+
+.location7, .location7_img{
+    grid-row-start: 13;
+}
+
+.location8, .location8_img{
+    grid-row-start: 14;
+}
+
+.location9, .location9_img{
+    grid-row-start: 15;
+}
+
+.location10, .location10_img{
+    grid-row-start: 16;
+}
+
+
+/* ====== Nation 3: Korea ====== */
+
+.nation3_text, .nation3_img{
+    grid-row: 17 / span 1;
+}
+
+.overview3, .overview3_img{
+    grid-row: 18 / span 1;
+}
+
+.photo_gallery3{
+    grid-row-start: 19;
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+.location11, .location11_img{
+    grid-row-start: 20;
+}
+
+.location12, .location12_img{
+    grid-row-start: 21;
+}
+
+.location13, .location13_img{
+    grid-row-start: 22;
+}
+
+.location14, .location14_img{
+    grid-row-start: 23;
+}
+
+.location15, .location15_img{
+    grid-row-start: 24;
+}
+
+
+/* ====== Nation 4: Hong Kong ====== */
+
+.nation4_text, .nation4_img{
+    grid-row: 25 / span 1;
+}
+
+.overview4, .overview4_img{
+    grid-row: 26 / span 1;
+}
+
+.photo_gallery4{
+    grid-row-start: 27;
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+.location16, .location16_img{
+    grid-row-start: 28;
+}
+
+.location17, .location17_img{
+    grid-row-start: 29;
+}
+
+.location18, .location18_img{
+    grid-row-start: 30;
+}
+
+.location19, .location19_img{
+    grid-row-start: 31;
+}
+
+.location20, .location20_img{
+    grid-row-start: 32;
+}
+
+
+/* ====== Nation 5: Thailand ====== */
+
+.nation5_text, .nation5_img{
+    grid-row: 33 / span 1;
+}
+
+.overview5, .overview5_img{
+    grid-row: 34 / span 1;
+}
+
+.photo_gallery5{
+    grid-row-start: 35;
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+.location21, .location21_img{
+    grid-row-start: 36;
+}
+
+.location22, .location22_img{
+    grid-row-start: 37;
+}
+
+.location23, .location23_img{
+    grid-row-start: 38;
+}
+
+.location24, .location24_img{
+    grid-row-start: 39;
+}
+
+.location25, .location25_img{
+    grid-row-start: 40;
+}
+
+
+
+/* ====== Nation 6: Vietnam ====== */
+
+.nation6_text, .nation6_img{
+    grid-row: 41 / span 1;
+}
+
+.overview6, .overview6_img{
+    grid-row: 42 / span 1;
+}
+
+.photo_gallery6{
+    grid-row-start: 43;
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+.location26, .location26_img{
+    grid-row-start: 44;
+}
+
+.location27, .location27_img{
+    grid-row-start: 45;
+}
+
+.location28, .location28_img{
+    grid-row-start: 46;
+}
+
+.location29, .location29_img{
+    grid-row-start: 47;
+}
+
+.location30, .location30_img{
+    grid-row-start: 48;
+}
+
+
+
+
+
+/* ********** all nations ********** */
+.location1, .location2, .location3, .location4, .location5, 
+.location6, .location7, .location8, .location9, .location10,
+.location11, .location12, .location13, .location14, .location15,
+.location16, .location17, .location18, .location19, .location20,
+.location21, .location22, .location23, .location24, .location25,
+.location26, .location27, .location28, .location29, .location30{
+    grid-column-start: 2;
+    grid-column-end: span 1;
+}
+
+.nation1_img, .overview1_img, .location1_img, .location2_img, .location3_img, .location4_img, .location5_img,
+.nation2_img, .overview2_img, .location6_img, .location7_img, .location8_img, .location9_img, .location10_img,
+.nation3_img, .overview3_img, .location11_img, .location12_img, .location13_img, .location14_img, .location15_img,
+.nation4_img, .overview4_img, .location16_img, .location17_img, .location18_img, .location19_img, .location20_img,
+.nation5_img, .overview5_img, .location21_img, .location22_img, .location23_img, .location24_img, .location25_img,
+.nation6_img, .overview6_img, .location26_img, .location27_img, .location28_img, .location29_img, .location30_img{
+    /* Cover all of the columns. */
+    grid-column-start: 1; 
+    grid-column-end: -1;
+    /* Have a maximum height of 600px */
+    height: 600px; 
+    /* Hide any content that goes outside their grid cell. */
+    overflow: hidden;
+    object-fit: fill;
+  }
+
+.text_block{
+/* Is centered horizontally and vertically with centered text. */
+    background-color: rgba(255, 255, 255, .8);
+    border: 5px solid black;
+    margin: auto;
+    overflow: auto;
+    padding: 10px;
+    text-align: center;
+    grid-column: 2 / span 1;
+}
+
+.container img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.container h2{
+    margin: 0.2em;
+}
+
+.nation1_text, .nation2_text, .nation3_text, .nation4_text, .nation5_text, .nation6_text{
+    /* Is centered horizontally and vertically with centered text. */
+        color: white;
+        margin: auto;
+        padding: 10px;
+        text-align: center;
+        font-style: italic;
+        text-shadow: rgb(51, 51, 51) 1px 0 10px;
+        font-size: 50px;
+        grid-column: 2 / span 1;
+}
+
+.nation1_text h2, .nation2_text h2, .nation3_text h2, .nation4_text h2, .nation5_text h2, .nation6_text h2{
+    color: white;
+    opacity: 0.5;
+}
+
+.overview1, .overview2, .overview3, .overview4, .overview5, .overview6{
+    height: 70%;
+    overflow: auto;
+}
+
+.nation1_img img, .nation2_img img, .nation3_img img, .nation4_img img, .nation5_img img, .nation6_img img{
+    object-fit: contain;
+}
+
+.nation1_img, .nation2_img, .nation3_img, .nation4_img, .nation5_img, .nation6_img{
+    margin-top: 15px;
+}
+
+.overview1_img, .overview2_img, .overview3_img, .overview4_img, .overview5_img, .overview6_img{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+/* ********** pet ********** */
+
+
+.pet-container{
+    display: grid;
+    grid-template-columns: 15% auto 15%;
+
+    grid-template-rows: auto;
+    gap: 15px;
+    align-items: center; /* Vertical alignment */
+    justify-content: center; /* Horizontal alignment */
+}
+
+.dog-name{
+    grid-row: 1 / 2;
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+.dog-name h2{
+    margin-bottom: 0;
+}
+
+.item1 img{
+    margin: 0;
+}
+
+.pet-container img {
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+    margin: 0;
+    padding: 0;
+}
+
+.item1,
+.item2, 
+.item3, 
+.item4, 
+.item5{
+    grid-column: 1 / -1;
+}
+
+
+.pet-container .item1{
+    grid-row: 2/3
+}
+.pet-container .item2{
+    grid-row: 3/4
+}
+.photo_gallery{
+    grid-row: 4/5;
+    grid-column: 1/-1;
+    text-align: center;
+}
+.pet-container .item3{
+    grid-row: 5/6
+}
+.pet-container .item4{
+    grid-row: 6/7
+}
+.pet-container .item5{
+    grid-row: 7/8
+}
+
+.intro, .about{
+    grid-column: 2/3;
+
+    background-color: rgba(255, 255, 255, .8);
+    border: 5px solid black;
+    margin: auto;
+    padding: 10px;
+    height: 60%;
+    overflow: auto;
+    text-align: center;
+}
+
+.intro{
+    grid-row: 2/3;
+}
+
+.about{
+    grid-row: 3/4;
+    height: auto;
+    width: auto;
+    
+}
+
+.about li{
+    text-align: left;
+}
+
+.intro h3, .intro p, .about h3, .about p{
+    margin-top: 0.7em;
+    margin-bottom: 0;
+}
+
+
+
+@media (prefers-reduced-motion: reduce) {
+    .gif {
+        display: none; /* Hide GIFs when reduced motion is preferred */
+    }
+}
+
+
+@media screen and (min-width: 800px) {
+    .container{
+        display: grid;
+        grid-template-columns: 5% 15% auto 15% 5%;
+    }
+    
+    .location1, .location3, .location5, .location2_img, .location4_img,
+    .location6, .location8, .location10, .location7_img, .location9_img,
+    .location11, .location13, .location15, .location12_img, .location14_img,
+    .location16, .location18, .location20, .location17_img, .location19_img,
+    .location21, .location23, .location25, .location22_img, .location24_img,
+    .location26, .location28, .location30, .location27_img, .location29_img{
+        /* Begin in the third column and span two columns */
+        grid-column-start: 3;
+        grid-column-end: span 2;
+        width: 100%;
+      }
+    
+      .location2, .location4, .location1_img, .location3_img, .location5_img,
+      .location7, .location9, .location6_img, .location8_img, .location10_img,
+      .location12, .location14, .location11_img, .location13_img, .location15_img,
+      .location17, .location19, .location16_img, .location18_img, .location20_img,
+      .location22, .location24, .location21_img, .location23_img, .location25_img,
+      .location27, .location29, .location26_img, .location28_img, .location30_img{
+        /* Begin in the second column and span two columns. */
+        grid-column-start: 2;
+        grid-column-end: span 2;
+        width: 100%;
+      }
+
+      .text-block{
+        /* max-height: 250px; */
+        height: auto;
+        overflow: auto;
+      }
+
+      .overview1, .overview2, .overview3, .overview4, .overview5, .overview6{
+        grid-column: 3 / span 1;
+        height: auto;
+        overflow: auto;
+      }
+
+      .nation1_text, .nation2_text, .nation3_text, .nation4_text, .nation5_text, .nation6_text{
+        grid-column: 3 / 4;
+        text-align: center;
+        font-size: 5em;
+      }
+
+    .intro, .about{
+        height: auto;
+    }
+
+}
