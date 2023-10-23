@@ -3,6 +3,10 @@ body{
     background-color: #dbe8e9;
 }
 
+main{
+    max-width: 100%;
+}
+
 h1{
     /* font-size: 100px; */
     font-family: Arial;
@@ -16,7 +20,7 @@ h2{
 }
 
 h3{
-    color: #296e96;
+    color: green;
     /* font-size: 50px; */
     font-family: Arial;
 }
@@ -55,11 +59,13 @@ nav li a {
 
 /* Change the link color to #111 (black) on hover */
 nav a:hover:not(.current) {
-  background-color: #111;
+  background-color: #76a1a6;
 }
 
 .current {
-  background-color: #76a1a6;
+  background-color: #111;
+  font-weight: 900;
+
 }
 
 /* Each page has a "Skip to Main Content" link that only appears when it has focus (using the tab key) */
@@ -84,251 +90,61 @@ When the link is in focus it is positioned 20px below the top of its parent (so 
   display: grid;
   grid-template-columns: 15% auto 15%;
   gap: 15px;
+  max-width: 100%;
 }
 
-/* ====== Nation 1: Taiwan ====== */
-
-.nation1_text, .nation1_img{
-    grid-row: 1 / span 1;
+header{
+    grid-column: 1/-1;
+    grid-row: 1/2;
 }
 
-.overview1, .overview1_img{
+/* ====== Nation ====== */
+
+.nation_text, .nation_img{
     grid-row: 2 / span 1;
 }
 
-.photo_gallery1{
-    grid-row-start: 3;
+.overview, .overview_img{
+    grid-row: 3 / span 1;
+}
+
+.photo_gallery{
+    grid-row-start: 4;
     grid-column: 1 / -1;
     text-align: center;
+    
+}
+
+.photo_gallery h3{
+    margin: 0.5em;
 }
 
 .location1, .location1_img{
-grid-row-start: 4;
+grid-row-start: 5;
 }
 
 .location2, .location2_img{
-    grid-row-start: 5;
-}
-
-.location3, .location3_img{
     grid-row-start: 6;
 }
 
-.location4, .location4_img{
+.location3, .location3_img{
     grid-row-start: 7;
 }
 
-.location5, .location5_img{
+.location4, .location4_img{
     grid-row-start: 8;
 }
 
-/* ====== Nation 2: Japan ====== */
-
-.nation2_text, .nation2_img{
-    grid-row: 9 / span 1;
+.location5, .location5_img{
+    grid-row-start: 9;
 }
 
-.overview2, .overview2_img{
-    grid-row: 10 / span 1;
-}
-
-.photo_gallery2{
-    grid-row-start: 11;
-    grid-column: 1 / -1;
-    text-align: center;
-}
-
-.location6, .location6_img{
-    grid-row-start: 12;
-}
-
-.location7, .location7_img{
-    grid-row-start: 13;
-}
-
-.location8, .location8_img{
-    grid-row-start: 14;
-}
-
-.location9, .location9_img{
-    grid-row-start: 15;
-}
-
-.location10, .location10_img{
-    grid-row-start: 16;
-}
-
-
-/* ====== Nation 3: Korea ====== */
-
-.nation3_text, .nation3_img{
-    grid-row: 17 / span 1;
-}
-
-.overview3, .overview3_img{
-    grid-row: 18 / span 1;
-}
-
-.photo_gallery3{
-    grid-row-start: 19;
-    grid-column: 1 / -1;
-    text-align: center;
-}
-
-.location11, .location11_img{
-    grid-row-start: 20;
-}
-
-.location12, .location12_img{
-    grid-row-start: 21;
-}
-
-.location13, .location13_img{
-    grid-row-start: 22;
-}
-
-.location14, .location14_img{
-    grid-row-start: 23;
-}
-
-.location15, .location15_img{
-    grid-row-start: 24;
-}
-
-
-/* ====== Nation 4: Hong Kong ====== */
-
-.nation4_text, .nation4_img{
-    grid-row: 25 / span 1;
-}
-
-.overview4, .overview4_img{
-    grid-row: 26 / span 1;
-}
-
-.photo_gallery4{
-    grid-row-start: 27;
-    grid-column: 1 / -1;
-    text-align: center;
-}
-
-.location16, .location16_img{
-    grid-row-start: 28;
-}
-
-.location17, .location17_img{
-    grid-row-start: 29;
-}
-
-.location18, .location18_img{
-    grid-row-start: 30;
-}
-
-.location19, .location19_img{
-    grid-row-start: 31;
-}
-
-.location20, .location20_img{
-    grid-row-start: 32;
-}
-
-
-/* ====== Nation 5: Thailand ====== */
-
-.nation5_text, .nation5_img{
-    grid-row: 33 / span 1;
-}
-
-.overview5, .overview5_img{
-    grid-row: 34 / span 1;
-}
-
-.photo_gallery5{
-    grid-row-start: 35;
-    grid-column: 1 / -1;
-    text-align: center;
-}
-
-.location21, .location21_img{
-    grid-row-start: 36;
-}
-
-.location22, .location22_img{
-    grid-row-start: 37;
-}
-
-.location23, .location23_img{
-    grid-row-start: 38;
-}
-
-.location24, .location24_img{
-    grid-row-start: 39;
-}
-
-.location25, .location25_img{
-    grid-row-start: 40;
-}
-
-
-
-/* ====== Nation 6: Vietnam ====== */
-
-.nation6_text, .nation6_img{
-    grid-row: 41 / span 1;
-}
-
-.overview6, .overview6_img{
-    grid-row: 42 / span 1;
-}
-
-.photo_gallery6{
-    grid-row-start: 43;
-    grid-column: 1 / -1;
-    text-align: center;
-}
-
-.location26, .location26_img{
-    grid-row-start: 44;
-}
-
-.location27, .location27_img{
-    grid-row-start: 45;
-}
-
-.location28, .location28_img{
-    grid-row-start: 46;
-}
-
-.location29, .location29_img{
-    grid-row-start: 47;
-}
-
-.location30, .location30_img{
-    grid-row-start: 48;
-}
-
-
-
-
-
-/* ********** all nations ********** */
-.location1, .location2, .location3, .location4, .location5, 
-.location6, .location7, .location8, .location9, .location10,
-.location11, .location12, .location13, .location14, .location15,
-.location16, .location17, .location18, .location19, .location20,
-.location21, .location22, .location23, .location24, .location25,
-.location26, .location27, .location28, .location29, .location30{
+.location1, .location2, .location3, .location4, .location5{
     grid-column-start: 2;
     grid-column-end: span 1;
 }
 
-.nation1_img, .overview1_img, .location1_img, .location2_img, .location3_img, .location4_img, .location5_img,
-.nation2_img, .overview2_img, .location6_img, .location7_img, .location8_img, .location9_img, .location10_img,
-.nation3_img, .overview3_img, .location11_img, .location12_img, .location13_img, .location14_img, .location15_img,
-.nation4_img, .overview4_img, .location16_img, .location17_img, .location18_img, .location19_img, .location20_img,
-.nation5_img, .overview5_img, .location21_img, .location22_img, .location23_img, .location24_img, .location25_img,
-.nation6_img, .overview6_img, .location26_img, .location27_img, .location28_img, .location29_img, .location30_img{
-    /* Cover all of the columns. */
+.nation_img, .overview_img, .location1_img, .location2_img, .location3_img, .location4_img, .location5_img{   /* Cover all of the columns. */
     grid-column-start: 1; 
     grid-column-end: -1;
     /* Have a maximum height of 600px */
@@ -361,7 +177,7 @@ grid-row-start: 4;
     margin: 0.2em;
 }
 
-.nation1_text, .nation2_text, .nation3_text, .nation4_text, .nation5_text, .nation6_text{
+.nation_text{
     /* Is centered horizontally and vertically with centered text. */
         color: white;
         margin: auto;
@@ -373,25 +189,25 @@ grid-row-start: 4;
         grid-column: 2 / span 1;
 }
 
-.nation1_text h2, .nation2_text h2, .nation3_text h2, .nation4_text h2, .nation5_text h2, .nation6_text h2{
+.nation_text h2{
     color: white;
     opacity: 0.5;
 }
 
-.overview1, .overview2, .overview3, .overview4, .overview5, .overview6{
+.overview{
     height: 70%;
     overflow: auto;
 }
 
-.nation1_img img, .nation2_img img, .nation3_img img, .nation4_img img, .nation5_img img, .nation6_img img{
+.nation_img img{
     object-fit: contain;
 }
 
-.nation1_img, .nation2_img, .nation3_img, .nation4_img, .nation5_img, .nation6_img{
+.nation_img{
     margin-top: 15px;
 }
 
-.overview1_img, .overview2_img, .overview3_img, .overview4_img, .overview5_img, .overview6_img{
+.overview_img{
     margin-left: 15px;
     margin-right: 15px;
 }
@@ -413,6 +229,8 @@ grid-row-start: 4;
     grid-row: 1 / 2;
     grid-column: 1 / -1;
     text-align: center;
+    justify-self: center;
+    width: 100%;
 }
 
 .dog-name h2{
@@ -439,7 +257,7 @@ grid-row-start: 4;
 .item3, 
 .item4, 
 .item5{
-    grid-column: 1 / -1;
+    grid-column: 1 / -1;    
 }
 
 
@@ -498,11 +316,7 @@ grid-row-start: 4;
 
 
 
-@media (prefers-reduced-motion: reduce) {
-    .gif {
-        display: none; /* Hide GIFs when reduced motion is preferred */
-    }
-}
+
 
 
 @media screen and (min-width: 800px) {
@@ -511,24 +325,14 @@ grid-row-start: 4;
         grid-template-columns: 5% 15% auto 15% 5%;
     }
     
-    .location1, .location3, .location5, .location2_img, .location4_img,
-    .location6, .location8, .location10, .location7_img, .location9_img,
-    .location11, .location13, .location15, .location12_img, .location14_img,
-    .location16, .location18, .location20, .location17_img, .location19_img,
-    .location21, .location23, .location25, .location22_img, .location24_img,
-    .location26, .location28, .location30, .location27_img, .location29_img{
+    .location1, .location3, .location5, .location2_img, .location4_img{
         /* Begin in the third column and span two columns */
         grid-column-start: 3;
         grid-column-end: span 2;
         width: 100%;
-      }
+    }
     
-      .location2, .location4, .location1_img, .location3_img, .location5_img,
-      .location7, .location9, .location6_img, .location8_img, .location10_img,
-      .location12, .location14, .location11_img, .location13_img, .location15_img,
-      .location17, .location19, .location16_img, .location18_img, .location20_img,
-      .location22, .location24, .location21_img, .location23_img, .location25_img,
-      .location27, .location29, .location26_img, .location28_img, .location30_img{
+      .location2, .location4, .location1_img, .location3_img, .location5_img{
         /* Begin in the second column and span two columns. */
         grid-column-start: 2;
         grid-column-end: span 2;
@@ -541,13 +345,13 @@ grid-row-start: 4;
         overflow: auto;
       }
 
-      .overview1, .overview2, .overview3, .overview4, .overview5, .overview6{
+      .overview{
         grid-column: 3 / span 1;
         height: auto;
         overflow: auto;
       }
 
-      .nation1_text, .nation2_text, .nation3_text, .nation4_text, .nation5_text, .nation6_text{
+      .nation_text{
         grid-column: 3 / 4;
         text-align: center;
         font-size: 5em;
@@ -556,5 +360,18 @@ grid-row-start: 4;
     .intro, .about{
         height: auto;
     }
+
+    .item1,
+    .item2, 
+    .item3, 
+    .item4, 
+    .item5{
+        width: 80%;  
+        justify-self: center;
+    }
+
+    
+
+
 
 }
