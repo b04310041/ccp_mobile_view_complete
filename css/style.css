@@ -117,6 +117,7 @@ header{
 
 .photo_gallery h3{
     margin: 0.5em;
+    font-weight: bolder;
 }
 
 .location1, .location1_img{
@@ -234,7 +235,9 @@ grid-row-start: 5;
 }
 
 .dog-name h2{
-    margin-bottom: 0;
+    margin: 20px 0 0 0;
+    font-size: large;
+    font-weight: bolder;
 }
 
 .item1 img{
@@ -307,11 +310,25 @@ grid-row-start: 5;
 
 .about li{
     text-align: left;
+    margin-left: 20px;
+    list-style-type: disc;
+
 }
 
-.intro h3, .intro p, .about h3, .about p{
+.intro h3, .about h3, .overview h3, .text_block h2{
     margin-top: 0.7em;
-    margin-bottom: 0;
+    margin-bottom: 0.3em;
+    font-weight: bold;
+}
+
+.intro p, .overview p, .about p, .text_block p{
+    margin-top: 0.7em;
+    margin-bottom: 0.7em;
+}
+
+.overview a{
+    color: blue;
+    text-decoration: underline;
 }
 
 
